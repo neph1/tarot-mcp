@@ -1,0 +1,16 @@
+My first venture into mcp servers.
+
+
+Contains a tarot deck and three tools. Supports a single user, since the deck is fixed, once shuffled.
+
+get_next_card() - for when you just want one
+
+celtic_cross_next() - gets the next card for a celtic cross reading
+
+reset() - shuffle the deck again and reset the celtic cross
+
+Cards may come with description. It felt right to shuffle the deck before use.
+
+card descriptions (card_data.json) were borrowed from this repository: https://github.com/ekelen/tarot-api (No license, but: "You are welcome to just grab the JSON file that serves as the data source and use it for your own projects."). Notes: "Fortitude" to "Strength". "The Last Judgment" to "Judgement".
+
+By default, listens to 127.0.0.1:8000/tarot-mcp (if you're coming from localhost, replace 127.0.0.1 with localhost or you get a 403)
